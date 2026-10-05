@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="600" fill="#eef6f1"/>
+  <rect y="430" width="800" height="170" fill="#dfe9e3"/>
+  <rect x="120" y="90" width="560" height="120" rx="8" fill="#fff" stroke="#c9d6ce" stroke-width="3"/>
+  <g stroke="#c9d6ce" stroke-width="3"><line x1="150" y1="130" x2="650" y2="130"/><line x1="150" y1="155" x2="650" y2="155"/><line x1="150" y1="180" x2="650" y2="180"/></g>
+  <circle cx="620" cy="150" r="8" fill="#00732f"/>
+  <circle cx="400" cy="330" r="60" fill="#00732f"/>
+  <rect x="340" y="390" width="120" height="150" rx="10" fill="#141414"/>
+  <rect x="470" y="400" width="14" height="110" rx="6" fill="#c8102e" transform="rotate(25 470 400)"/>
+  <text x="400" y="580" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#52565c">Placeholder: replace with a real photo</text>
+</svg>
