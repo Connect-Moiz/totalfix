@@ -5,13 +5,13 @@ import { areas, navLinks, services, site } from "@/lib/site";
 const heading =
   "relative pb-3 text-sm font-semibold uppercase tracking-wider text-white after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-8 after:rounded-full after:bg-green";
 const link =
-  "text-sm text-white/90 transition-all duration-200 hover:translate-x-1 hover:text-white";
+  "text-sm text-white/90 transition-all duration-200  hover:text-white";
 const iconWrap =
   "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-colors group-hover:bg-green";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-b from-neutral-900 to-black text-white">
+    <footer className="relative overflow-hidden bg-black text-white">
       <div className="h-1 w-full bg-gradient-to-r from-green via-green to-[#c8102e]" />
 
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-5 lg:px-8">
@@ -26,8 +26,8 @@ export default function Footer() {
             />
           </a>
           <p className="mt-5 text-sm leading-relaxed text-white/90">
-            Professional AC, plumbing, electrical and home maintenance services
-            across Dubai.
+            Professional Electrical, AC, Plumbing & Home Maintenance Services. <br/>
+            Car Charger, Electric Geyser Installation.
           </p>
         </div>
 

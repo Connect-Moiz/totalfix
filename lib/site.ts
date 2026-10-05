@@ -8,9 +8,9 @@ import {
 export const site = {
   name: "TOTALFIX",
   fullName: "TOTALFIX Technical Services",
-  phone: "+971 50 000 0000",
-  phoneHref: "tel:+971500000000",
-  whatsappHref: "https://wa.me/971500000000?text=Hello%20TOTALFIX%2C%20I%20need%20a%20quote.",
+  phone: "+971509974160",
+  phoneHref: "tel:+971509974160",
+  whatsappHref: "https://wa.me/971509974160?text=Hello%20TOTALFIX%2C%20I%20need%20a%20quote.",
   email: "info@totalfix.ae",
   hours: "Open daily, 7:00 am – 10:00 pm",
   url: "https://www.totalfix.ae",
@@ -27,9 +27,9 @@ export const navLinks = [
 export type Service = { title: string; description: string; icon: LucideIcon; href: string };
 
 export const services: Service[] = [
+   { title: "Electrical", description: "Fault finding, rewiring, DB panel work and safe, tested installations.", icon: Zap, href: "#contact" },
   { title: "AC Repair & Maintenance", description: "Servicing, gas refilling, cleaning and repair for split, ducted and window units.", icon: Snowflake, href: "#contact" },
   { title: "Plumbing", description: "Pipe repairs, drain unblocking, mixers, heaters and bathroom fittings.", icon: Droplets, href: "#contact" },
-  { title: "Electrical", description: "Fault finding, rewiring, DB panel work and safe, tested installations.", icon: Zap, href: "#contact" },
   { title: "Home Maintenance", description: "Scheduled upkeep for apartments and villas, so small issues stay small.", icon: Wrench, href: "#contact" },
   { title: "Water Leak Repair", description: "Locate and fix leaking pipes, taps, flush tanks and under-sink lines.", icon: Droplet, href: "#contact" },
   { title: "Switch & Socket Repair", description: "Replace faulty switches, sockets and breakers with correctly rated parts.", icon: PlugZap, href: "#contact" },
