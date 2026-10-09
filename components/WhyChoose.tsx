@@ -21,7 +21,7 @@ export default function WhyChoose() {
             id="why-title"
             className="text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl"
           >
-            Why Choose <span className="text-[#c8102e]">TOTALFIX</span>
+            Why Choose <span className="text-[#c8102e]">US</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Straightforward service from people who do this every day.

@@ -12,11 +12,11 @@ const plex = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "TOTALFIX Technical Services | AC, Plumbing & Electrical in Dubai",
+  title: "PERFECT FIX Technical Services | AC, Plumbing & Electrical in Dubai",
   description:
     "Reliable AC repair, plumbing, electrical and home maintenance services across Dubai. Fast response, transparent pricing, experienced technicians.",
   openGraph: {
-    title: "TOTALFIX Technical Services, Dubai",
+    title: "PERFECT FIX Technical Services, Dubai",
     description: "AC, plumbing, electrical and home maintenance across Dubai.",
     type: "website",
     locale: "en_AE",

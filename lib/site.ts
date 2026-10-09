@@ -6,14 +6,14 @@ import {
 } from "lucide-react";
 
 export const site = {
-  name: "TOTALFIX",
-  fullName: "TOTALFIX Technical Services",
+  name: "PERFECT FIX",
+  fullName: "PERFECT FIX Technical Services",
   phone: "+971509974160",
   phoneHref: "tel:+971509974160",
-  whatsappHref: "https://wa.me/971509974160?text=Hello%20TOTALFIX%2C%20I%20need%20a%20quote.",
-  email: "info@totalfix.ae",
+  whatsappHref: "https://wa.me/971509974160?text=Hello%20PERFECT%20FIX%2C%20I%20need%20a%20quote.",
+  email: "info@perfectfix.ae",
   hours: "Open daily, 7:00 am – 10:00 pm",
-  url: "https://www.totalfix.ae",
+  url: "https://www.perfectfix.ae",
 };
 
 export const navLinks = [
@@ -36,6 +36,20 @@ export const services: Service[] = [
   { title: "Light Fixture Installation", description: "Ceiling, wall and outdoor lights, chandeliers and LED upgrades fitted neatly.", icon: Lightbulb, href: "#contact" },
   { title: "General Handyman", description: "Mounting, assembly, door and cabinet fixes, and other small jobs around the home.", icon: Hammer, href: "#contact" },
 ];
+
+export const footer = [
+  { title: "Electrical", href: "#contact" },
+  { title: "Chandelier light Installation", href: "#contact" },
+  { title: "Car Charger Installation", href: "#contact" },
+  { title: "Electric Geyser", href: "#contact" },
+  { title: "Home Maintenance", href: "#contact" },
+  { title: "Water Leak Repair", href: "#contact" },
+  { title: "Switch & Socket Repair", href: "#contact" },
+  // { title: "Light Fixture Installation", href: "#contact" },
+  // { title: "General Handyman", href: "#contact" },
+];
+
+
 
 export const reasons = [
   { title: "Experienced technicians", description: "Trained professionals who diagnose the problem before they quote.", icon: UserCheck },

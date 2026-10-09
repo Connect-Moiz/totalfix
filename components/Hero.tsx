@@ -14,18 +14,21 @@ const trust = [
 
 const slides = [
   {
-    src: "/images/hero-1.jpeg",
-    alt: "TOTALFIX technician repairing an air conditioning unit",
+    src: "/images/he-1.jpeg",
+    alt: "PERFECT FIX technician repairing an air conditioning unit",
   },
   {
-    src: "/images/hero-2.jpeg",
+    src: "/images/he-2.jpeg",
     alt: "Plumber fixing a kitchen tap in a Dubai home",
   },
   {
-    src: "/images/hro-3.jpeg",
+    src: "/images/he-5.jpeg",
     alt: "Electrician checking a distribution board",
   },
-  { src: "/images/hero-4.jpeg", alt: "Handyman completing a home repair" },
+  { src: "/images/he-4.jpeg", alt: "Handyman completing a home repair" },
+   { src: "/images/he-3.jpeg", alt: "Chandelier installation" },
+    { src: "/images/he-6.jpeg", alt: "Ceiling light installation" },
+    { src: "/images/he-7.jpeg", alt: "Fan installation" },
 ];
 
 const INTERVAL_MS = 3500;
@@ -75,9 +78,9 @@ export default function Hero() {
           </h1>
           <p className="mt-3 text-lg font-semibold text-white">
             Professional Electrical, AC, Plumbing & Home Maintenance Services.
-            <br /> Car Charger, Electric Geyser Installation.
+            <br /> Car Charger, Electric Geyser,Chandelier light Installation.
           </p>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80">
+          <p className="mt-4 max-w-xl text-[17px] leading-relaxed text-white/80">
             From faulty wiring and power issues to a leaking tap or failed AC,
             our technicians arrive on time, diagnose the problem and provide a
             clear price before work begins.

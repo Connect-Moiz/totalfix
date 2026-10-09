@@ -34,12 +34,12 @@ export default function About() {
         <div className="mx-auto max-w-3xl text-center">
           <h2
             id="about-title"
-            className="text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl"
+            className="text-3xl font-bold tracking-tight text-[#141414] sm:text-4xl lg:text-5xl"
           >
-            About <span className="text-[#c8102e]">TOTALFIX</span>
+            About <span className="text-[#c8102e]">PERFECT FIX</span>
           </h2>
-          <p className="mt-4 text-[14px] font-semibold leading-relaxed text-ink sm:text-[18px]">
-            TOTALFIX Technical Services provides professional home technical and
+          <p className="mt-4 text-[14px] font-semibold leading-relaxed text-[#141414] sm:text-[18px]">
+            PERFECT FIX Technical Services provides professional home technical and
             maintenance services in Dubai. We cover AC, plumbing, electrical and
             general repairs, so one call handles most of what a home needs.
           </p>

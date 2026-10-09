@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Phone, MessageCircle, Mail } from "lucide-react";
-import { areas, navLinks, services, site } from "@/lib/site";
+import { areas, footer, navLinks, services, site } from "@/lib/site";
 
 const heading =
   "relative pb-3 text-sm font-semibold uppercase tracking-wider text-white after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-8 after:rounded-full after:bg-green";
@@ -18,26 +18,28 @@ export default function Footer() {
         <div className="sm:col-span-2 lg:col-span-1">
           <a href="/" aria-label="Home" className="inline-block rounded-xl p-3">
             <Image
-              src="/images/logo-3.png"
-              alt="Total Fix Technical Services"
+              src="/images/footer-logo.png"
+              alt="Perfect Fix Technical Services"
               width={339}
               height={184}
-              className="h-14 w-auto object-contain"
+              className="h-17 w-auto object-contain"
             />
           </a>
-          <p className="mt-5 text-sm leading-relaxed text-white/90">
-            Professional Electrical, AC, Plumbing & Home Maintenance Services. <br/>
+          <p className="mt-3 sm:pl-0 md:pl-2 lg:pl-5 text-sm leading-relaxed text-white/90">
+            Professional Electrical, AC, Plumbing & Home Maintenance Services.{" "}
+            <br />
             Car Charger, Electric Geyser Installation.
           </p>
         </div>
 
         <nav aria-label="Services">
           <h2 className={heading}>Services</h2>
+
           <ul className="mt-5 space-y-3">
-            {services.slice(0, 6).map((s) => (
-              <li key={s.title}>
-                <a href={s.href} className={`${link} inline-block`}>
-                  {s.title}
+            {footer.map((item) => (
+              <li key={item.title}>
+                <a href={item.href} className={`${link} inline-block`}>
+                  {item.title}
                 </a>
               </li>
             ))}
@@ -60,7 +62,7 @@ export default function Footer() {
         <div>
           <h2 className={heading}>Service areas</h2>
           <ul className="mt-5 space-y-3">
-            {areas.slice(0, 6).map((a) => (
+            {areas.slice(0, 11).map((a) => (
               <li key={a} className="text-sm text-white/90">
                 {a}
               </li>

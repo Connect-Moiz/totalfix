@@ -21,7 +21,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-line bg-white/95 shadow-sm backdrop-blur">
       <nav
         aria-label="Main"
-        className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-8"
+        className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-24 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-8"
       >
         <a
           href="/"
@@ -29,11 +29,11 @@ export default function Navbar() {
           className="flex shrink-0 items-center justify-self-start"
         >
           <Image
-            src="/images/logo-3.png"
-            alt="Total Fix Technical Services"
-            width={339}
+            src="/images/perfect-logo2.png"
+            alt="Perfect Fix Technical Services"
+            width={360}
             height={184}
-            className="h-14 w-auto object-contain sm:h-16 lg:h-[68px]"
+            className="h-14 w-auto object-contain sm:h-16 lg:h-20"
             priority
           />
         </a>
@@ -43,7 +43,7 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="group relative block px-4 py-2 text-[15px] font-semibold text-ink transition-colors hover:text-green"
+                className="group relative block px-4 py-2 text-[18px] font-semibold text-ink transition-colors hover:text-green"
               >
                 {l.label}
                 <span className="absolute inset-x-4 -bottom-0.5 h-0.5 origin-left scale-x-0 rounded-full bg-green transition-transform duration-200 group-hover:scale-x-100" />

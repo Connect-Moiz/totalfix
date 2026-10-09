@@ -39,7 +39,7 @@ export default function Services() {
                 href={href}
                 className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#c8102e] hover:text-[#c8102e]/80"
               >
-                Learn more<span className="sr-only"> about {title}</span>
+                Request a service<span className="sr-only"> about {title}</span>
                 <ArrowRight
                   className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                   aria-hidden="true"
