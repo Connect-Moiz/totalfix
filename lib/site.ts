@@ -6,14 +6,14 @@ import {
 } from "lucide-react";
 
 export const site = {
-  name: "PERFECT FIX",
-  fullName: "PERFECT FIX Technical Services",
+  name: "P-FIX",
+  fullName: "P-FIX Technical Services",
   phone: "+971509974160",
   phoneHref: "tel:+971509974160",
-  whatsappHref: "https://wa.me/971509974160?text=Hello%20PERFECT%20FIX%2C%20I%20need%20a%20quote.",
-  email: "info@perfectfix.ae",
+  whatsappHref: "https://wa.me/971509974160?text=Hello%20P-FIX%2C%20I%20need%20a%20quote.",
+  email: "pfix.services@gmail.com",
   hours: "Open daily, 7:00 am – 10:00 pm",
-  url: "https://www.perfectfix.ae",
+  url: "https://www.p-fix.ae",
 };
 
 export const navLinks = [

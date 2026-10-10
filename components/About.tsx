@@ -36,10 +36,10 @@ export default function About() {
             id="about-title"
             className="text-3xl font-bold tracking-tight text-[#141414] sm:text-4xl lg:text-5xl"
           >
-            About <span className="text-[#c8102e]">PERFECT FIX</span>
+            About <span className="text-[#c8102e]">P-FIX</span>
           </h2>
           <p className="mt-4 text-[14px] font-semibold leading-relaxed text-[#141414] sm:text-[18px]">
-            PERFECT FIX Technical Services provides professional home technical and
+            P-FIX Technical Services provides professional home technical and
             maintenance services in Dubai. We cover AC, plumbing, electrical and
             general repairs, so one call handles most of what a home needs.
           </p>

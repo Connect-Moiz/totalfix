@@ -29,8 +29,8 @@ export default function Navbar() {
           className="flex shrink-0 items-center justify-self-start"
         >
           <Image
-            src="/images/perfect-logo2.png"
-            alt="Perfect Fix Technical Services"
+            src="/images/nav-pfix-logo.png"
+            alt="P-FIX Technical Services"
             width={360}
             height={184}
             className="h-14 w-auto object-contain sm:h-16 lg:h-20"

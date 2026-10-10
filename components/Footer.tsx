@@ -18,8 +18,8 @@ export default function Footer() {
         <div className="sm:col-span-2 lg:col-span-1">
           <a href="/" aria-label="Home" className="inline-block rounded-xl p-3">
             <Image
-              src="/images/footer-logo.png"
-              alt="Perfect Fix Technical Services"
+              src="/images/footer-pfix.png"
+              alt="P-FIX Technical Services"
               width={339}
               height={184}
               className="h-17 w-auto object-contain"
