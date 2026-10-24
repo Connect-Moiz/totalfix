@@ -29,11 +29,10 @@ export default function CtaSection() {
               id="cta-title"
               className="text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl"
             >
-              Need a Repair? We&apos;re Ready to Help.
+              Need an Electrician in Dubai? We're Here to Help.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
-              Call or message us with what&apos;s wrong. We&apos;ll confirm a
-              time and a price.
+              Call or WhatsApp us to tell us what you need. We'll discuss the job, confirm a convenient time, and arrange the service that suits your needs.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
               <Button href={site.phoneHref} variant="white">

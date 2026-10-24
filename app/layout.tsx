@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { site } from "@/lib/site";
 
@@ -17,7 +18,8 @@ export const metadata: Metadata = {
     "Reliable AC repair, plumbing, electrical and home maintenance services across Dubai. Fast response, transparent pricing, experienced technicians.",
   openGraph: {
     title: "P-FIX Technical Services, Dubai",
-    description: "AC, plumbing, electrical and home maintenance across Dubai.",
+    description:
+      "AC, plumbing, electrical and home maintenance across Dubai.",
     type: "website",
     locale: "en_AE",
   },
@@ -25,9 +27,30 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = { themeColor: "#00732f" };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={plex.variable}>
+      <head>
+        {/* Google Ads Tag */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18532298318"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'AW-18532298318');
+          `}
+        </Script>
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

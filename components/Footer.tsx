@@ -26,9 +26,9 @@ export default function Footer() {
             />
           </a>
           <p className="mt-3 sm:pl-0 md:pl-2 lg:pl-5 text-sm leading-relaxed text-white/90">
-            Professional Electrical, AC, Plumbing & Home Maintenance Services.{" "}
+            Professional Electrical, EV Car Charger, Electric Geyser,Chandelier light Installation Installation. <br/>AC, Plumbing & Home Maintenance Services.{" "}
             <br />
-            Car Charger, Electric Geyser Installation.
+           
           </p>
         </div>
 

@@ -69,5 +69,5 @@ export const steps = [
 
 export const areas = [
   "Dubai Marina", "Downtown Dubai", "Business Bay", "Jumeirah", "JVC", "Al Barsha",
-  "Dubai Hills", "Arjan", "Al Furjan", "Al Nahda", "Mirdif",
+  "Dubai Hills", "Arjan", "Al Furjan", "Al Nahda", "Mirdif","Dubai Harbour","Emirates Hills","Jumeirah Park","Jumeirah Islands","Jebel Ali","Dubai Internet City","Dubai Media City","Motor City","Town Square Dubai","Arabian Ranches","Dubai Festival City","Dubai Creek Harbour","Ras Al Khor","Nad Al Sheba","Dubai Silicon Oasis","International City","Al Warqa","Al Quoz","Muhaisnah",
 ];
