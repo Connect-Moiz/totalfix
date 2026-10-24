@@ -26,9 +26,9 @@ const slides = [
     alt: "Electrician checking a distribution board",
   },
   { src: "/images/her-4.jpeg", alt: "Handyman completing a home repair" },
-   { src: "/images/her-2.jpeg", alt: "Chandelier installation" },
-    { src: "/images/her-6.jpeg", alt: "Ceiling light installation" },
-    { src: "/images/her-7.jpeg", alt: "Fan installation" },
+  { src: "/images/her-2.jpeg", alt: "Chandelier installation" },
+  { src: "/images/her-6.jpeg", alt: "Ceiling light installation" },
+  { src: "/images/her-7.jpeg", alt: "Fan installation" },
 ];
 
 const INTERVAL_MS = 3500;
@@ -90,11 +90,34 @@ export default function Hero() {
             <Button href="#contact" variant="red">
               Get a Free Quote
             </Button>
-            <Button href={site.phoneHref} variant="green">
+
+            <Button
+              href={site.phoneHref}
+              variant="green"
+              onClick={() => {
+                window.gtag?.("event", "conversion", {
+                  send_to: "AW-18532298318/EQZCCI-Hj6cdEM7c8YRF",
+                  value: 1.0,
+                  currency: "PKR",
+                });
+              }}
+            >
               <Phone className="h-4 w-4" aria-hidden="true" />
               Call Now
             </Button>
-            <Button href={site.whatsappHref} variant="outline" external>
+
+            <Button
+              href={site.whatsappHref}
+              variant="outline"
+              external
+              onClick={() => {
+                window.gtag?.("event", "conversion", {
+                  send_to: "AW-18532298318/EQZCCI-Hj6cdEM7c8YRF",
+                  value: 1.0,
+                  currency: "PKR",
+                });
+              }}
+            >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
               WhatsApp
             </Button>

@@ -32,17 +32,42 @@ export default function CtaSection() {
               Need an Electrician in Dubai? We're Here to Help.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
-              Call or WhatsApp us to tell us what you need. We'll discuss the job, confirm a convenient time, and arrange the service that suits your needs.
+              Call or WhatsApp us to tell us what you need. We'll discuss the
+              job, confirm a convenient time, and arrange the service that suits
+              your needs.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-              <Button href={site.phoneHref} variant="white">
+              <Button
+                href={site.phoneHref}
+                variant="white"
+                onClick={() => {
+                  window.gtag?.("event", "conversion", {
+                    send_to: "AW-18532298318/EQZCCI-Hj6cdEM7c8YRF",
+                    value: 1.0,
+                    currency: "PKR",
+                  });
+                }}
+              >
                 <Phone className="h-4 w-4" aria-hidden="true" />
                 Call Now
               </Button>
-              <Button href={site.whatsappHref} variant="black" external>
+
+              <Button
+                href={site.whatsappHref}
+                variant="black"
+                external
+                onClick={() => {
+                  window.gtag?.("event", "conversion", {
+                    send_to: "AW-18532298318/EQZCCI-Hj6cdEM7c8YRF",
+                    value: 1.0,
+                    currency: "PKR",
+                  });
+                }}
+              >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
                 WhatsApp Us
               </Button>
+
               <Button
                 href={`mailto:${site.email}?subject=Quote%20request`}
                 variant="red"
