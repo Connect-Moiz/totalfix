@@ -1,3 +1,4 @@
+"use client";
 import { Phone, MessageCircle } from "lucide-react";
 import Button from "./ui/Button";
 import { site } from "@/lib/site";
