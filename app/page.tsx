@@ -12,12 +12,19 @@ import { site } from "@/lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
+  "@type": "Electrician",
   name: site.fullName,
   url: site.url,
   telephone: site.phone,
-  email: site.email,
-  areaServed: "Dubai, United Arab Emirates",
+  areaServed: { "@type": "City", name: "Dubai" },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
+    ],
+    opens: "07:00",
+    closes: "22:00",
+  },
 };
 
 export default function Home() {

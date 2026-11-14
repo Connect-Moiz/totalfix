@@ -26,7 +26,7 @@ export default function Areas() {
             Areas <span className="text-[#c8102e]">We Serve</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-            Our teams work across Dubai, so most visits are same-day. Don&apos;t
+            Our electricians work across Dubai, so most visits are same-day. Don&apos;t
             see your area? Call us and we&apos;ll confirm.
           </p>
         </div>

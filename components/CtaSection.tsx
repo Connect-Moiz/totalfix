@@ -2,8 +2,10 @@
 import { Phone, MessageCircle } from "lucide-react";
 import Button from "./ui/Button";
 import { site } from "@/lib/site";
+import { useEmail } from "./ui/useEmail";
 
 export default function CtaSection() {
+  const email = useEmail();
   return (
     <section
       id="contact"
@@ -30,10 +32,10 @@ export default function CtaSection() {
               id="cta-title"
               className="text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl"
             >
-              Need an Electrician in Dubai? We're Here to Help.
+              Need an Electrician in Dubai? We’re Here to Help.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
-              Call or WhatsApp us to tell us what you need. We'll discuss the
+              Call or WhatsApp us to tell us what you need. We’ll discuss the
               job, confirm a convenient time, and arrange the service that suits
               your needs.
             </p>
@@ -70,7 +72,7 @@ export default function CtaSection() {
               </Button>
 
               <Button
-                href={`mailto:${site.email}?subject=Quote%20request`}
+                href={email ? `mailto:${email}?subject=Quote%20request` : "#contact"}
                 variant="red"
               >
                 Get a Free Quote

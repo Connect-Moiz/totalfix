@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Phone, MessageCircle, Mail } from "lucide-react";
-import { areas, footer, navLinks, services, site } from "@/lib/site";
+import { areas, footer, navLinks, site } from "@/lib/site";
+import EmailLink from "./ui/EmailLink";
 
 const heading =
   "relative pb-3 text-sm font-semibold uppercase tracking-wider text-white after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-8 after:rounded-full after:bg-green";
@@ -16,7 +18,7 @@ export default function Footer() {
 
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-5 lg:px-8">
         <div className="sm:col-span-2 lg:col-span-1">
-          <a href="/" aria-label="Home" className="inline-block rounded-xl p-3">
+          <Link href="/" aria-label="Home" className="inline-block rounded-xl p-3">
             <Image
               src="/images/footer-pfix.png"
               alt="P-FIX Technical Services"
@@ -24,11 +26,9 @@ export default function Footer() {
               height={184}
               className="h-17 w-auto object-contain"
             />
-          </a>
+          </Link>
           <p className="mt-3 sm:pl-0 md:pl-2 lg:pl-5 text-sm leading-relaxed text-white/90">
-            Professional Electrical, EV Car Charger, Electric Geyser,Chandelier light Installation Installation. <br/>AC, Plumbing & Home Maintenance Services.{" "}
-            <br />
-           
+            Professional Electrician Services in Dubai. <br />EV Car Charger, Electric Geyser, Chandelier & Light Installation, Wiring and Repairs.
           </p>
         </div>
 
@@ -98,15 +98,14 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a
-                href={`mailto:${site.email}`}
+              <EmailLink
                 className="group flex items-center gap-3 break-all text-sm text-white/90 transition-colors hover:text-white"
-              >
-                <span className={iconWrap}>
-                  <Mail className="h-4 w-4" aria-hidden="true" />
-                </span>
-                {site.email}
-              </a>
+                icon={
+                  <span className={iconWrap}>
+                    <Mail className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                }
+              />
             </li>
           </ul>
         </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "./ui/Button";
 import { navLinks, site } from "@/lib/site";
@@ -23,7 +24,7 @@ export default function Navbar() {
         aria-label="Main"
         className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-24 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-8"
       >
-        <a
+        <Link
           href="/"
           aria-label="Home"
           className="flex shrink-0 items-center justify-self-start"
@@ -36,7 +37,7 @@ export default function Navbar() {
             className="h-14 w-auto object-contain sm:h-16 lg:h-20"
             priority
           />
-        </a>
+        </Link>
 
         <ul className="hidden items-center justify-center gap-1 lg:flex">
           {navLinks.map((l) => (

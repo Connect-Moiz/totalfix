@@ -1,5 +1,5 @@
 import {
-  Snowflake, Droplets, Zap, Wrench, Droplet, PlugZap, Lightbulb, Hammer,
+  Zap, PlugZap, Lightbulb, SearchCheck, CircuitBoard, Sparkles, BatteryCharging, Heater,
   UserCheck, Clock, BadgeCheck, Receipt, ShieldCheck, ThumbsUp,
   Phone, FileText, CalendarCheck, CheckCircle2,
   type LucideIcon,
@@ -11,9 +11,12 @@ export const site = {
   phone: "+971509974160",
   phoneHref: "tel:+971509974160",
   whatsappHref: "https://wa.me/971509974160?text=Hello%20P-FIX%2C%20I%20need%20a%20quote.",
-  email: "pfix.services@gmail.com",
+  // Email is assembled in the browser (see components/ui/useEmail.ts) so it is not
+  // exposed as plain text in the page HTML to scrapers.
+  emailUser: "pfix.services",
+  emailDomain: "gmail.com",
   hours: "Open daily, 7:00 am – 10:00 pm",
-  url: "https://www.p-fix.ae",
+  url: "https://pfix-technicalservices.com",
 };
 
 export const navLinks = [
@@ -27,44 +30,41 @@ export const navLinks = [
 export type Service = { title: string; description: string; icon: LucideIcon; href: string };
 
 export const services: Service[] = [
-   { title: "Electrical", description: "Fault finding, rewiring, DB panel work and safe, tested installations.", icon: Zap, href: "#contact" },
-  { title: "AC Repair & Maintenance", description: "Servicing, gas refilling, cleaning and repair for split, ducted and window units.", icon: Snowflake, href: "#contact" },
-  { title: "Plumbing", description: "Pipe repairs, drain unblocking, mixers, heaters and bathroom fittings.", icon: Droplets, href: "#contact" },
-  { title: "Home Maintenance", description: "Scheduled upkeep for apartments and villas, so small issues stay small.", icon: Wrench, href: "#contact" },
-  { title: "Water Leak Repair", description: "Locate and fix leaking pipes, taps, flush tanks and under-sink lines.", icon: Droplet, href: "#contact" },
+  { title: "Electrical Fault Finding", description: "Find and fix power failures, tripping breakers, short circuits and faulty wiring.", icon: SearchCheck, href: "#contact" },
+  { title: "Rewiring & Upgrades", description: "Safe rewiring, extra points and load upgrades for apartments, villas and offices.", icon: Zap, href: "#contact" },
+  { title: "DB Panel & Breakers", description: "Distribution board repair, MCB and RCCB replacement, labelling and safety testing.", icon: CircuitBoard, href: "#contact" },
   { title: "Switch & Socket Repair", description: "Replace faulty switches, sockets and breakers with correctly rated parts.", icon: PlugZap, href: "#contact" },
-  { title: "Light Fixture Installation", description: "Ceiling, wall and outdoor lights, chandeliers and LED upgrades fitted neatly.", icon: Lightbulb, href: "#contact" },
-  { title: "General Handyman", description: "Mounting, assembly, door and cabinet fixes, and other small jobs around the home.", icon: Hammer, href: "#contact" },
+  { title: "Light Fixture Installation", description: "Ceiling, wall and outdoor lights, ceiling fans and LED upgrades fitted neatly.", icon: Lightbulb, href: "#contact" },
+  { title: "Chandelier Installation", description: "Careful hanging, wiring and testing of chandeliers and decorative lighting.", icon: Sparkles, href: "#contact" },
+  { title: "EV Car Charger Installation", description: "Home EV charger installation with a dedicated, correctly protected circuit.", icon: BatteryCharging, href: "#contact" },
+  { title: "Electric Geyser Installation", description: "Electric water heater supply connection, replacement and safe wiring.", icon: Heater, href: "#contact" },
 ];
 
 export const footer = [
-  { title: "Electrical", href: "#contact" },
-  { title: "Chandelier light Installation", href: "#contact" },
-  { title: "Car Charger Installation", href: "#contact" },
-  { title: "Electric Geyser", href: "#contact" },
-  { title: "Home Maintenance", href: "#contact" },
-  { title: "Water Leak Repair", href: "#contact" },
+  { title: "Electrical Fault Finding", href: "#contact" },
+  { title: "Rewiring & Upgrades", href: "#contact" },
+  { title: "DB Panel & Breakers", href: "#contact" },
   { title: "Switch & Socket Repair", href: "#contact" },
-  // { title: "Light Fixture Installation", href: "#contact" },
-  // { title: "General Handyman", href: "#contact" },
+  { title: "Light Fixture Installation", href: "#contact" },
+  { title: "Chandelier Installation", href: "#contact" },
+  { title: "EV Car Charger Installation", href: "#contact" },
+  { title: "Electric Geyser Installation", href: "#contact" },
 ];
 
-
-
 export const reasons = [
-  { title: "Experienced technicians", description: "Trained professionals who diagnose the problem before they quote.", icon: UserCheck },
-  { title: "Fast response", description: "Same-day visits across Dubai for urgent repairs, with a clear arrival window.", icon: Clock },
-  { title: "Quality workmanship", description: "Proper materials, clean finishing and work checked before we leave.", icon: BadgeCheck },
+  { title: "Experienced electricians", description: "Trained professionals who trace the fault before they quote.", icon: UserCheck },
+  { title: "Fast response", description: "Same-day visits across Dubai for urgent electrical faults, with a clear arrival window.", icon: Clock },
+  { title: "Quality workmanship", description: "Proper cables, correctly rated parts and every circuit tested before we leave.", icon: BadgeCheck },
   { title: "Transparent pricing", description: "You approve the price before work starts. No hidden call-out or add-on charges.", icon: Receipt },
-  { title: "Reliable service", description: "We turn up when we say we will, and we stand behind the repair.", icon: ShieldCheck },
+  { title: "Safe & reliable", description: "We turn up when we say we will, work safely and stand behind every repair.", icon: ShieldCheck },
   { title: "Customer satisfaction", description: "We follow up after every job and return to fix anything that isn't right.", icon: ThumbsUp },
 ];
 
 export const steps = [
   { title: "Contact us", description: "Call, WhatsApp or send a request. Tell us what needs fixing.", icon: Phone },
   { title: "Get a quote", description: "We confirm the scope and give you a clear price.", icon: FileText },
-  { title: "Technician visits", description: "A technician arrives at the agreed time with the right tools.", icon: CalendarCheck },
-  { title: "Job completed", description: "We finish the work, test it and clean up.", icon: CheckCircle2 },
+  { title: "Electrician visits", description: "An electrician arrives at the agreed time with the right tools.", icon: CalendarCheck },
+  { title: "Job completed", description: "We finish the work, test the circuit and clean up.", icon: CheckCircle2 },
 ];
 
 export const areas = [

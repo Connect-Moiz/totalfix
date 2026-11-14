@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.pfix-technicalservices.com/sitemap.xml",
+    sitemap: "https://pfix-technicalservices.com/sitemap.xml",
   };
 }

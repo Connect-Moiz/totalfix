@@ -1,18 +1,17 @@
-# TOTALFIX Technical Services – homepage
+# P-FIX Technical Services, Dubai electrician website
 
 Next.js (App Router) + Tailwind CSS v4 + lucide-react.
 
-## Setup
+## Run
 ```bash
-npx create-next-app@latest totalfix --typescript --tailwind --eslint --app --import-alias "@/*"
-cd totalfix
-npm i lucide-react
-# copy app/, components/, lib/, public/ from this folder over the generated project
-npm run dev
+npm install
+npm run dev      # local
+npm run build && npm start   # production
 ```
 
-## Before launch
-- Edit `lib/site.ts`: real phone, WhatsApp number, email, hours and domain.
-- Replace `public/images/hero.svg` with a real photo and update `src` in `components/Hero.tsx`.
-- Point "Learn more" links to service pages when they exist.
-- Add a real quote form or booking page; "Get a Free Quote" currently opens an email.
+## Where to edit
+- `lib/site.ts`: phone, WhatsApp, email parts, hours, domain, services, reasons, steps, areas.
+- `components/Hero.tsx`: hero slideshow images and text.
+- `next.config.ts`: security headers (CSP, X-Frame-Options, etc.). If you add a new
+  third-party script (chat widget, analytics, maps), add its domain to the CSP there.
+- `public/images/`: hero photos and logos.

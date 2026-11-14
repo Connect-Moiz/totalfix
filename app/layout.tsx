@@ -1,25 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { site } from "@/lib/site";
-
-const plex = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-plex",
-  display: "swap",
-});
+import FloatingContact from "@/components/FloatingContact";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "P-FIX Technical Services | AC, Plumbing & Electrical in Dubai",
+  title: "Electrician in Dubai | P-FIX Technical Services",
   description:
-    "Reliable AC repair, plumbing, electrical and home maintenance services across Dubai. Fast response, transparent pricing, experienced technicians.",
+    "Reliable electrician services across Dubai: fault finding, wiring, DB panels, switches and sockets, lighting, chandeliers, EV car chargers and electric geysers. Fast response, transparent pricing.",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "P-FIX Technical Services, Dubai",
+    title: "Electrician in Dubai | P-FIX Technical Services",
     description:
-      "AC, plumbing, electrical and home maintenance across Dubai.",
+      "Fast, reliable electrician services across Dubai with clear pricing before work begins.",
+    url: "/",
+    siteName: "P-FIX Technical Services",
     type: "website",
     locale: "en_AE",
   },
@@ -33,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={plex.variable}>
+    <html lang="en">
       <head>
         {/* Google Ads Tag */}
         <Script
@@ -51,7 +47,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">{children}<FloatingContact /></body>
     </html>
   );
 }

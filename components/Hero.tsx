@@ -7,28 +7,36 @@ import Button from "./ui/Button";
 import { site } from "@/lib/site";
 
 const trust = [
-  { label: "Experienced technicians", icon: Users },
+  { label: "Experienced electricians", icon: Users },
   { label: "Fast response", icon: Zap },
   { label: "Quality work", icon: Award },
 ];
 
 const slides = [
   {
-    src: "/images/her-1.jpeg",
-    alt: "P-FIX technician repairing an air conditioning unit",
+    src: "/images/her-3.jpeg",
+    alt: "P-FIX electrician testing a distribution board in a Dubai home",
   },
   {
-    src: "/images/her-3.jpeg",
-    alt: "Plumber fixing a kitchen tap in a Dubai home",
+    src: "/images/her-4.jpeg",
+    alt: "P-FIX electrician installing a ceiling light fixture",
   },
   {
     src: "/images/her-5.jpeg",
-    alt: "Electrician checking a distribution board",
+    alt: "P-FIX electrician installing a crystal chandelier",
   },
-  { src: "/images/her-4.jpeg", alt: "Handyman completing a home repair" },
-  { src: "/images/her-2.jpeg", alt: "Chandelier installation" },
-  { src: "/images/her-6.jpeg", alt: "Ceiling light installation" },
-  { src: "/images/her-7.jpeg", alt: "Fan installation" },
+  {
+    src: "/images/her-6.jpeg",
+    alt: "P-FIX electrician wiring a pendant light",
+  },
+  {
+    src: "/images/her-7.jpeg",
+    alt: "P-FIX electrician fitting a decorative ceiling light",
+  },
+  {
+    src: "/images/her-8.jpeg",
+    alt: "P-FIX electrician installing a ceiling fan",
+  },
 ];
 
 const INTERVAL_MS = 3500;
@@ -73,17 +81,17 @@ export default function Hero() {
             id="hero-title"
             className="text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl"
           >
-            Reliable Technical Services{" "}
+            Reliable Electrician Services{" "}
             <span className="text-[#c8102e]">Across Dubai</span>
           </h1>
           <p className="mt-3 text-lg font-semibold text-white">
-            Professional Electrical, AC, Plumbing & Home Maintenance Services.
-            <br /> Car Charger, Electric Geyser,Chandelier light Installation.
+            Professional Electrical Repair, Installation & Maintenance Services.
+            <br /> EV Car Charger, Electric Geyser, Chandelier & Light Installation.
           </p>
           <p className="mt-4 max-w-xl text-[17px] leading-relaxed text-white/80">
-            From faulty wiring and power issues to a leaking tap or failed AC,
-            our technicians arrive on time, diagnose the problem and provide a
-            clear price before work begins.
+            From faulty wiring and power trips to a dead socket or a tripping
+            breaker, our electricians arrive on time, diagnose the problem and
+            provide a clear price before work begins.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

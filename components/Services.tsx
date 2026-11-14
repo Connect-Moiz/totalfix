@@ -17,8 +17,8 @@ export default function Services() {
             Our <span className="text-[#c8102e]">Services</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-            Home repair and technical maintenance for apartments, villas and
-            offices across Dubai.
+            Electrical repair, installation and maintenance for apartments,
+            villas and offices across Dubai.
           </p>
         </div>
 

@@ -3,7 +3,7 @@ import { Award, CalendarCheck, Wrench, Headphones } from "lucide-react";
 const points = [
   {
     title: "Experience",
-    text: "Our technicians have years of hands-on work in Dubai homes and buildings.",
+    text: "Our electricians have years of hands-on work in Dubai homes and buildings.",
     icon: Award,
   },
   {
@@ -13,7 +13,7 @@ const points = [
   },
   {
     title: "Professional workmanship",
-    text: "Correct parts, tidy finishing and testing before we call a job done.",
+    text: "Correct parts, tidy wiring and testing before we call a job done.",
     icon: Wrench,
   },
   {
@@ -39,13 +39,14 @@ export default function About() {
             About <span className="text-[#c8102e]">P-FIX</span>
           </h2>
           <p className="mt-4 text-[14px] font-semibold leading-relaxed text-[#141414] sm:text-[18px]">
-            P-FIX Technical Services provides professional home technical and
-            maintenance services in Dubai. We cover AC, plumbing, electrical and
-            general repairs, so one call handles most of what a home needs.
+            P-FIX Technical Services provides professional electrician services
+            in Dubai. We cover fault finding, wiring, DB panels, lighting, EV
+            charger and geyser installation, so one call handles the electrical
+            needs of your home or office.
           </p>
           <p className="mt-4 text-[15px] font-medium leading-relaxed text-muted sm:text-[16px]">
             We keep things simple: explain the problem honestly, agree the price
-            up front, and do the work properly.
+            up front, and do the work safely and properly.
           </p>
         </div>
 
